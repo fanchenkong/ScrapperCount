@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .red {
+      color: red;
+    }
+  </style>
+  <table>
+    <tr>
+      <th>Folder</th>
+      <th>Count</th> 
+    </tr>
+    <tr>
+      <td>Failed By Wharton QA</td>
+      <td>{{ FailedByWhartonQA }}</td> 
+    </tr>
+    <tr>
+      <td>Ready For Ballmer Group</td>
+      <td>{{ ReadyForBallmerGroup }}</td> 
+    </tr>
+    <tr>
+      <td>Ready For Wharton QA</td>
+      <td>{{ ReadyForWhartonQA }}</td> 
+    </tr>
+    <tr>
+      <td>Ready For QA2</td>
+      <td>{{ ReadyForQA2 }}</td> 
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold">Total</td>
+      <td>{{ total }}</td> 
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold">Target as of {{ nearestFriday }}</td>
+      <td>{{ expectedCount }}</td> 
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold">Gap</td>
+      <td class="red">{{ gap }}</td> 
+    </tr>
+  </table>
+</html>
+
+
+
